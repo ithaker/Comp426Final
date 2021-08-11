@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Draw Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/draw.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="./map.html">Home</a></li>
+            <li><a href="./draw.html">Draw</a></li>
+            <li style="float:right"><a class="current" href="./index.html">Sign Out</a></li>
+        </ul>
+    </div>
+    <h1>Plan your Route!</h1>
+
+    <div id="highScore">
+        <p>Your draw time:</p>
+        <p id="time">0</p>
+        <p>Current high score:</p>
+        <p id="high">0</p>
+    </div>
+    <br><br>
+
+    <canvas id="canvas" width="935" height="600"></canvas>
+    <div class="tools">
+        <button id="decrease">-</button>
+        <span id="size">5</span>
+        <button id="increase">+</button>
+        <input type="color" id="color" />
+        <button id="clear">clear</button>
+    </div>
+    <br><br><br><br>
+</body>
+</html>

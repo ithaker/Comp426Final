@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Log In Page</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="js/form.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        <h1>Sign In/Sign Up</h1>
+        <div id="formBlock">
+            <div id="header"></div><br><br>
+
+            <input type="email" placeholder="email" id="email"/>
+            <input type="password" placeholder="password" id="password"/>
+            <div id="text-center">
+                <button onclick="signUp()" id="signUp">Sign Up</button>
+                <button onclick="signIn()" id="signIn">Sign In</button>
+                <button onclick="signOut()" id="signOut">Sign Out</button>
+            </div>
+        </div>
+  
+    </body>
+
+    <style>
+        body{
+            background-color: #ccd5ae;
+        }
+
+        h1{
+            background-color:#606c38;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            border-radius: 100px;
+            margin: 100px auto;
+            width: 30% auto;
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 45px;
+            color:black;
+        }
+
+        #formBlock{
+            background-color: #faedcd;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 25% auto;
+            height: 25% auto;
+            margin: 10px auto;
+        }
+
+        #text-center{
+            text-align: center;
+        }
+
+        #email{
+            background-color: #faedcd;
+            width:70%;
+            height:40px;
+            display:block;
+            margin: 0 auto;
+            border:none;
+            outline:none;
+            border-bottom: 2px solid black;
+        }
+
+        #password{
+            background-color: #faedcd;
+            width:70%;
+            height:40px;
+            display:block;
+            margin: 10 auto;
+            border:none;
+            outline:none;
+            border-bottom: 2px solid black;
+        }
+
+        #signUp{
+            background-color: #d4a373;
+            color: white;
+            border:none;
+            font-weight: bold;
+            padding: 15px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration:none;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        #signIn{
+            background-color: #d4a373;
+            color: white;
+            border:none;
+            font-weight: bold;
+            padding: 15px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration:none;
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        #signOut{
+            background-color: #d4a373;
+            color: white;
+            border:none;
+            font-weight: bold;
+            padding: 15px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration:none;
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+    </style>
+</html>

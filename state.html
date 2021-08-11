@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>North Carolina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/state.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="./map.html">Home</a></li>
+            <li><a href="./draw.html">Draw</a></li>
+            <li style="float:right"><a class="current" href="./index.html">Sign Out</a></li>
+        </ul>
+    </div>
+    <h1>North Carolina</h1>
+    <img class="stateBox" src="images/North+Carolina.png" alt="Map of NC">
+    <h2>Get the latest forecast for your city!</h2>
+    <div class="input">
+        <input type="text" placeholder="Enter the city" class="input_text" autocomplete="on">
+        <input type="submit" value="Submit" class="submit">
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h1 class="name" id="name"></h1>
+            <p class="temp"></p>
+            <p class="clouds"></p>
+            <p class="desc"></p>
+        </div>
+        <script src="js/weatherApp.js"></script>
+    </div>
+
+    <div id="row">
+        <div id="column">
+            <h2>North Carolina in the News</h2>
+            <div id="holder">
+                <p class="title" id="title"></p>
+                <p class="author" id="author"></p>
+                <p class="description" id="description"></p>
+                <a class="URL" id="URL"></a>
+
+                <p class="title" id="title2"></p>
+                <p class="author" id="author2"></p>
+                <p class="description" id="description2"></p>
+                <a class="URL" id="URL2"></a>
+
+                <p class="title" id="title3"></p>
+                <p class="author" id="author3"></p>
+                <p class="description" id="description3"></p>
+                <a class="URL" id="URL3"></a>
+
+                <p class="title" id="title4"></p>
+                <p class="author" id="author4"></p>
+                <p class="description" id="description4"></p>
+                <a class="URL" id="URL4"></a>
+
+                <p class="title" id="title5"></p>
+                <p class="author" id="author5"></p>
+                <p class="description" id="description5"></p><br>
+                <a class="URL" id="URL5"></a>
+            </div>
+        </div>
+        <div id="column">
+            <h2>Stay up to date on the COVID-19 pandemic in North Carolina</h2>
+            <a class="twitter-timeline" href="https://twitter.com/ncdhhs?ref_src=twsrc%5Etfw">Tweets by North Carolina
+                Department of Health and Human Services</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</body>
+
+</html>
