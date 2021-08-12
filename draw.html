@@ -16,6 +16,7 @@
         <ul>
             <li><a href="./map.html">Home</a></li>
             <li><a href="./draw.html">Draw</a></li>
+            <li><button style="margin-top: 12px; margin-left: 750px ;" class="toggle" onclick="toggleTheme()">High Contrast Mode</button></li>
             <li style="float:right"><a class="current" href="./index.html">Sign Out</a></li>
         </ul>
     </div>
@@ -38,5 +39,25 @@
         <button id="clear">clear</button>
     </div>
     <br><br><br><br>
+    <script>
+        const btn = document.querySelector(".toggle");
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme == "dark") {
+            document.body.classList.add("dark-mode");
+        }
+
+        btn.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+
+            let theme = "light";
+            if (document.body.classList.contains("dark-mode")) {
+                theme = "dark"
+            }
+            localStorage.setItem("theme", theme);
+        })
+
+    </script>
 </body>
+
 </html>
