@@ -10,6 +10,20 @@ h1{
     color:black;
 }
 
+.info {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.infoBox {
+  position: relative;
+  height: 50px;
+  margin-left: 50px auto; /*-- try it --*/
+  padding: 0px;
+  top: 0px;
+  text-align: center;
+  }
+
 .mapBox {
   border-radius: 100px;
   display: block;
@@ -21,6 +35,19 @@ h1{
   max-width: 100%;
   height:auto;
 }
+
+.card {
+  background-color: lightskyblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 100% auto;
+  width: auto;
+  height: 50% auto;
+  margin: 10px auto;
+}
+
 
 #holder {
   height: auto;
